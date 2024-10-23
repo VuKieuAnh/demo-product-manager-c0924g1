@@ -5,10 +5,18 @@
     <title>Title</title>
 </head>
 <body>
-<input  placeholder="new product" id="newProduct"><button onclick="createNewProduct()">add</button>
+<input  placeholder="name" id="name">
+<input  placeholder="price" id="price">
+<input  placeholder="color" id="color">
+<input  placeholder="number" id="number">
+<button onclick="createNewProduct()">add</button>
 <table border="1px">
     <tr>
         <th>Name</th>
+        <th>Price</th>
+        <th>Color</th>
+        <th>Number</th>
+        <th>Amount</th>
         <th>Edit</th>
         <th>Delete</th>
     </tr>
@@ -20,6 +28,8 @@
     </tr>
     </tbody>
 </table>
+<h4 id="count"></h4>
+<h4 id="amount"></h4>
 <script src="product.js"></script>
 </body>
 </html>
