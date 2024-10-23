@@ -40,3 +40,20 @@ function deleteProduct(id) {
         getProducts();}
 
 }
+// 1. Tao class product
+// name, price, color, number.
+class Product {
+    name; price; color; number;
+
+    constructor(name, price, color, number) {
+        this.name = name;
+        this.price = price;
+        this.color = color;
+        this.number = number;
+    }
+
+    getAmount(){
+        let amount = this.price*this.number;
+        return amount;
+    }
+}
